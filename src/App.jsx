@@ -41,6 +41,10 @@ function App() {
         <Typography variant="body1" color="primary" align="center" >Hola soy un body1 color primary y estoy alineado al centro</Typography>
 
       </Container>
+      <Container maxWidth="lg" >
+      <Typography variant="h6" color="primary">form</Typography>
+
+      </Container>
     </>
   );
 }
