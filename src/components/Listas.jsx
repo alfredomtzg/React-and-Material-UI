@@ -11,11 +11,18 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 
 const Listas = () => {
-    return(
-        <div>
-            <h1>Hola</h1>
-        </div>
-    )
+  return(
+    <div>
+      <List component='nav'>
+        <ListItem button>
+          <ListItemIcon>
+            <SportsEsportsIcon/>
+          </ListItemIcon>
+          <ListItemText primary='Mi primer elemento'/>
+        </ListItem>
+      </List>
+    </div>
+  )
 }
 
 export default Listas;
