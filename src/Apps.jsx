@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button } from "@material-ui/core";
+import { Button, Container } from "@material-ui/core";
 
 const useStyle = makeStyles({
   boton: {
@@ -19,7 +19,10 @@ function Apps() {
 
   return (
     <div>
-    <Button className={classes.boton}>Diseñado con useStyle</Button>
+      <Container maxWidth="sm">
+        <Button className={classes.boton}>Diseñado con useStyle</Button>
+      </Container>
+    
     </div>
   );
 }
