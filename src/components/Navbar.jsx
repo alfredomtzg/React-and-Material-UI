@@ -12,8 +12,10 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1
   },
   AppBar: {
-    width: `calc(100% - ${240}px)`,
-    marginLeft: 240,
+    [theme.breakpoints.up('sm')]: {
+      width: `calc(100% - ${240}px)`,
+      marginLeft: 240,
+    }
   }
 }))
 
