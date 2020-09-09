@@ -7,6 +7,12 @@ import {
 const estilos = makeStyles(theme => ({
   root: {
     display: 'flex'
+  },
+  toolbar: theme.mixins.toolbar,
+  content: {
+    flexGrow: 1,
+    backgroundColor: theme.palette.background.default,
+    padding: theme.spacing(3),
   }
 }))
 
@@ -16,7 +22,11 @@ const Contenedor = () => {
   return(
     <div className={classes.root}>
       <Navbar/>
-      Contenido
+
+      <div className={classes.content}>
+        <div className={classes.toolbar}></div>
+        Contenido
+      </div>
     </div>
   )
 }
