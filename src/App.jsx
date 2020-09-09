@@ -27,6 +27,12 @@ function App() {
         endIcon ={<DeleteIcon color="secondary"/>} >
           Delete
         </Button>
+        <Button 
+        variant="contained" 
+        color="default"
+        startIcon ={<DeleteIcon color="primary"/>} >
+          Delete
+        </Button>
 
         <IconButton 
         aria-label="delete" 
