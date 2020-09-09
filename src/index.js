@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import Login from './Form';
 import App from './App';
 import AppBar from './AppBar'
+import Apps from './Apps'
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppBar />
+    <Apps />
   </React.StrictMode>,
   document.getElementById('root')
 );
