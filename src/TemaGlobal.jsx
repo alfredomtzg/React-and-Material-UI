@@ -4,6 +4,7 @@ import { MuiThemeProvider } from '@material-ui/core/styles'
 import theme from './temaConfig'
 import Navbar from './components/Navbar'
 import Listas from './components/Listas'
+import Oculto from './components/Oculto'
 
 function TemaGlobal() {
     return(
@@ -13,6 +14,7 @@ function TemaGlobal() {
                 contained
             </Button>
             <Listas/>
+            <Oculto/>
         </MuiThemeProvider>
     )
 }
