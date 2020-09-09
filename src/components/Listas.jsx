@@ -20,14 +20,14 @@ const Listas = () => {
           <ListItemIcon>
             <SportsEsportsIcon/>
           </ListItemIcon>
-          <ListItemText primary='Juegos online'/>
+          <ListItemText primary='Game online'/>
         </ListItem>
 
         <ListItem button>
           <ListItemIcon>
             <ShoppingCartIcon/>
           </ListItemIcon>
-          <ListItemText primary='Juegos disponibles'/>
+          <ListItemText primary='Game shop'/>
         </ListItem>
 
         <Divider/>
@@ -36,7 +36,7 @@ const Listas = () => {
           <ListItemIcon>
             <ShareIcon/>
           </ListItemIcon>
-          <ListItemText primary='Comparte con tus amigos'/>
+          <ListItemText primary='Share'/>
         </ListItem>
 
       </List>

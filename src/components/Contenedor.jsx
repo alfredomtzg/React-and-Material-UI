@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import {
-  makeStyles
+  makeStyles, Hidden
 } from '@material-ui/core'
 import Cajon from './Cajon'
 
@@ -23,7 +23,9 @@ const Contenedor = () => {
   return(
     <div className={classes.root}>
       <Navbar/>
-      <Cajon/>
+      <Hidden xsDown>
+        <Cajon/>
+      </Hidden>
       <div className={classes.content}>
         <div className={classes.toolbar}></div>
         Contenido
