@@ -4,34 +4,35 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 
 const useStyles = makeStyles(theme => ({
-  offset: theme.mixins.toolbar,
+
   menuButton: {
     marginRight: theme.spacing(2),
   },
   title: {
     flexGrow: 1
   },
+  AppBar: {
+    width: `calc(100% - ${240}px)`,
+    marginLeft: 240,
+  }
 }))
 
 export default function Navbar() {
   const classes = useStyles()
   return(
-    <div>
-      <AppBar position="fixed" color="primary">
-        <Toolbar>
-          <IconButton className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon/>
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            Alfredo
-          </Typography>
-          <Button variant="text" color="inherit">
-            LOGIN
-          </Button>
-        </Toolbar>
-      </AppBar>
-      <div className={classes.offset}></div>
-    </div>
+    <AppBar position="fixed" color="primary" className={classes.AppBar}>
+      <Toolbar>
+        <IconButton className={classes.menuButton} color="inherit" aria-label="menu">
+          <MenuIcon/>
+        </IconButton>
+        <Typography variant="h6" className={classes.title}>
+          Foro Game
+        </Typography>
+        <Button variant="text" color="inherit">
+          LOGIN
+        </Button>
+      </Toolbar>
+    </AppBar>
   )
 }
 

@@ -1,7 +1,9 @@
 import React from 'react'
+import Listas from './Listas'
 import {
   makeStyles,
-  Drawer
+  Drawer,
+  Divider
 } from '@material-ui/core'
 
 const drawerWidth = 240
@@ -29,6 +31,9 @@ const Cajon = () => {
       }}
       anchor= 'left'
     >
+      <div className={classes.toolbar}></div>
+      <Divider/>
+      <Listas/>
     </Drawer>
   )
 }
