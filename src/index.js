@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import TemaGlobal from './TemaGlobal'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Fragment>
     <TemaGlobal />
-  </React.StrictMode>,
+  </Fragment>,
   document.getElementById('root')
 );
 
