@@ -18,14 +18,26 @@ const estilos = makeStyles(theme => ({
 }))
 
 const Contenedor = () => {
-  const classes = estilos()
+  const classes = estilos();
+  const [abrir, setAbrir] = React.useState(false);
 
   return(
     <div className={classes.root}>
       <Navbar/>
+
       <Hidden xsDown>
-        <Cajon/>
+        <Cajon
+          variant="permanent"
+          open={true} />
       </Hidden>
+
+      <Hidden smUp>
+        <Cajon
+          variant="temporary"
+          open={abrir}
+          />
+      </Hidden>
+
       <div className={classes.content}>
         <div className={classes.toolbar}></div>
         Contenido
