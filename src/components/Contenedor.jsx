@@ -4,6 +4,7 @@ import {
   makeStyles, Hidden
 } from '@material-ui/core'
 import Cajon from './Cajon'
+import Boxin from './Box'
 
 const estilos = makeStyles(theme => ({
   root: {
@@ -13,7 +14,7 @@ const estilos = makeStyles(theme => ({
   content: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
-    padding: theme.spacing(3),
+    padding: theme.spacing(2),
   }
 }))
 
@@ -44,7 +45,7 @@ const Contenedor = () => {
 
       <div className={classes.content}>
         <div className={classes.toolbar}></div>
-        Contenido
+        <Boxin/>
       </div>
       
     </div>
