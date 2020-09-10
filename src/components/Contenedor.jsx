@@ -5,6 +5,7 @@ import {
 } from '@material-ui/core'
 import Cajon from './Cajon'
 import Boxin from './Box'
+import Grids from './Grids'
 
 const estilos = makeStyles(theme => ({
   root: {
@@ -46,6 +47,7 @@ const Contenedor = () => {
       <div className={classes.content}>
         <div className={classes.toolbar}></div>
         <Boxin/>
+        <Grids/>
       </div>
       
     </div>
