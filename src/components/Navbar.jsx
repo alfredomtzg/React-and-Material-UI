@@ -22,12 +22,12 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-export default function Navbar() {
+export default function Navbar(props) {
   const classes = useStyles()
   return(
     <AppBar position="fixed" color="primary" className={classes.AppBar}>
       <Toolbar>
-        <IconButton className={classes.menuButton} color="inherit" aria-label="menu">
+        <IconButton onClick={()=> props.accionAbrir()} className={classes.menuButton} color="inherit" aria-label="menu">
           <MenuIcon/>
         </IconButton>
         <Typography variant="h6" className={classes.title}>
