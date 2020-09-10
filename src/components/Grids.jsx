@@ -21,14 +21,14 @@ const Grids = () => {
             xs 8
           </Box>
         </Grid>
-        <Grid item xs={4}>
-          <Box color="primary.main" ml={1} mt={1} border={1}>
-            xs 4
+        <Grid item xs={4} md={6}>
+          <Box color="primary.main"  mt={1} border={1}>
+            xs 4 y en md 6
           </Box>
         </Grid>
-        <Grid item xs={1}>
-          <Box color="primary.main" mt={1} border={1}>
-            xs 1
+        <Grid item xs={1} md={6}>
+          <Box color="primary.main" mt={1}  border={1}>
+            xs 1 y en md 6
           </Box>
         </Grid>
       </Grid>
