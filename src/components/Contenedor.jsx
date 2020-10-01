@@ -43,9 +43,12 @@ const Contenedor = () => {
           onClose={accionAbrir}
           />
       </Hidden>
-
+      
       <div className={classes.content}>
         <div className={classes.toolbar}></div>
+        <button onClick={()=>accionAbrir()}>abrir </button>
+        <button onClick={()=>accionAbrir()}>cerrar</button>
+      {abrir ? "Hola estoy en true" : "estoy false"}
         <Boxin/>
         <Grids/>
       </div>
