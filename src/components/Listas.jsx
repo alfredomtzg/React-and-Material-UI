@@ -27,7 +27,7 @@ const Listas = () => {
           <ListItemIcon>
             <ShoppingCartIcon/>
           </ListItemIcon>
-          <ListItemText primary='Game shop'/>
+          <ListItemText primary='Game shopping'/>
         </ListItem>
 
         <Divider/>
